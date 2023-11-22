@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercices</title>
+  </head>
+  <body>
+    <div id="the-nav-bar">
+      <a href="#exo-listes">Événement</a>
+      <a href="#exo-immortels">Immortels</a>
+      <a href="#exo-cv">CV</a>
+    </div>
+    <div class="main-wrapper">
+      <div class="spacer"></div>
+      <article>
+        <section id="exo-listes" class="card">
+          <div class="exo-description">
+            <h1>Liste d'événements</h1>
+            <h2>But</h2>
+            <p>Modifier le layout du gestionnaire d'événement</p>
+            <h2>Description</h2>
+            <p>
+              Vous décider de rendre votre gestionnaire utilisable sur votre
+              téléphone, votre tablette et votre desktop
+            </p>
+            <p>
+              Pour le confort d'utilisation, vous décidez de mettre un layout
+              spécifique à ces différents supports
+            </p>
+          </div>
+          <div class="exo-hint">
+            <h2>Contraintes</h2>
+            <p>
+              Gestion de 3 layouts : moins de 600px de large, moins de 1300 px
+              de large et plus de 1300 px de large (idéalement, via deux
+              breakpoints).
+            </p>
+            <p>
+              Des captures d'écran sont disponibles pour vous représenter les
+              différents layouts
+            </p>
+            <h3>Téléphone</h3>
+            <p>
+              Afficher les informations à la suite les unes des autres en une
+              unique colonne profitant de toute la largeur du support
+            </p>
+            <h3>Tablette</h3>
+            <p>
+              Rassembler le formulaire et le récapitulatif sur la même rangée et
+              donner la même hauteur à ces éléments
+            </p>
+            <p>
+              Afficher les événements à la suite les uns des autres en autant de
+              rangées que nécessaire
+            </p>
+            <h3>Desktop</h3>
+            <p>
+              Afficher le formuulaire et le récapitulatif l'un au dessus de
+              l'autre à gauche de votre écran
+            </p>
+            <p>
+              Afficher les événements à droite de votre écran sur autant de
+              rangées que nécessaire
+            </p>
+          </div>
+        </section>
+        <section id="exo-immortels" class="card">
+          <div class="exo-description">
+            <h1>Immortels</h1>
+            <h2>But</h2>
+            <p>
+              Reproduire le layout de la page des immortels de l'académie
+              française
+            </p>
+            <h2>Description</h2>
+            <p>
+              Catastrophe, le site de l'académie française n'est pas adapté sur
+              téléphone portable.
+            </p>
+            <p>
+              Ceci explique sans doute le peu d'intérêt que les jeunes portes à
+              cette institution
+            </p>
+            <p>Faites en une version adaptée aux gsm et desktop</p>
+          </div>
+          <div class="exo-hint">
+            <h2>Contraintes</h2>
+            <p>
+              Gestion de 2 layouts : moins de 600px de large et plus de 600 px
+              de large (idéalement, via un unique breakpoints).
+            </p>
+            <p>
+              La version pc (plus de 600 px de large) doit se baser sur
+              <a
+                href="https://www.academie-francaise.fr/les-immortels/les-quarante-aujourdhui"
+              >
+                ce site web
+              </a>
+            </p>
+            <p>
+              La version gsm présentera les informations sur une unique colonne,
+              élargie pour prendre toute la largeur du support
+            </p>
+            <p>
+              vous omettrez la barre de navigation (à faire en bonus) pour
+              afficher d'abord l'image de l'assemblée suivie de la description
+              (titre "à l'immortalité") ainsi que la recherche par nom. Enfin,
+              la liste des immortels actuels sera adaptées pour avoir un nombre
+              de colonne raisonnable (1 max 2) pour rendre l'information lisible
+            </p>
+          </div>
+        </section>
+        <section id="exo-cv" class="card">
+          <div class="exo-description">
+            <h1>C.V.</h1>
+            <h2>But</h2>
+            <p>Créer votre C.V.</p>
+            <h2>Description</h2>
+            <p>
+              Avec la volonté de trouver un emploi dans le monde de
+              l'informatique, vous avez commencé de nouvelles études en cours du
+              soir. Mettre votre C.V. à jour et en ligne pourrait être un atout
+              dans votre recherche
+            </p>
+          </div>
+          <div class="exo-hint">
+            <h2>Contraintes</h2>
+            <p>Se baser sur le mockup fourni</p>
+            <p>
+              La partie gauche ne doit pas être scrollable tandis que la partie
+              de droite peut contenir autant d'éléments que nécessaire
+            </p>
+            <h2>Astuces</h2>
+            <p>
+              Commencez par mettre en place le layout général avec des boites
+              colorées
+            </p>
+            <p>
+              Une fois le layout général mis en place, commencez à détailler les
+              petits éléments
+            </p>
+          </div>
+        </section>
+      </article>
+      <div class="spacer"></div>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    background-color: rgb(245, 245, 245);
+    margin: unset;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-wrapper {
+    display: flex;
+  }
+  .spacer {
+    width: 10%;
+  }
+  p {
+    word-wrap: break-word;
+  }
+  h1 {
+    font-size: 28px;
+    text-decoration: underline;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 16px 32px;
+    transition: 0.5s;
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card::before {
+    position: absolute;
+    border-top: solid black 4px;
+    border-left: solid black 4px;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    content: "";
+    transition: 0.5s;
+    background-color: transparent;
+  }
+  .card::after {
+    position: absolute;
+    border-bottom: solid black 4px;
+    border-right: solid black 4px;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: "";
+    transition: 0.5s;
+    background-color: transparent;
+  }
+
+  .card:hover::before,
+  .card:hover::after {
+    transition: 0.5s;
+    height: 50%;
+    width: 50%;
+  }
+  .exo-description {
+    width: 30%;
+  }
+  .exo-hint {
+    width: 60%;
+  }
+  #the-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #the-nav-bar a {
+    text-decoration: unset;
+    color: black;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 4px;
+  }
+</style>

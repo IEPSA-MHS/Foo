@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercices JS</title>
+  </head>
+  <body>
+    <section id="exercise-1">
+      <h1>1. Console log</h1>
+      <p>Ajoutez une balise script dans votre fichier html</p>
+      <p>
+        Dans cette balise, écrivez votre premier code console.log('hello world')
+      </p>
+      <p>
+        Vous devriez voir le message "hello world" affiché dans la console de
+        votre inspecteur
+      </p>
+      <button onclick="finish('exercise-1')">Terminer</button>
+    </section>
+    <section id="exercise-2">
+      <h1>2. Boutons et événements</h1>
+      <p>Dans votre html, créer un bouton</p>
+      <p>
+        Dans votre script, créer une fonction affichant du texte dans la console
+      </p>
+      <p>Lier votre fonction à l'événement "click" de votre bouton</p>
+      <button onclick="finish('exercise-2')">Terminer</button>
+    </section>
+    <section id="exercise-3">
+      <h1>3. Listes de classes</h1>
+      <p>Dans votre html, créer un bouton ainsi qu'un titre (h1)</p>
+      <p>Donner un id (unique !) à votre h1</p>
+      <p>Dans une feuille de style, créer une règle .primary</p>
+      <p>
+        Cette règle va impacter le background-color et le color des éléments
+        disposant de cette classe
+      </p>
+      <p>Dans votre script, créer une fonction</p>
+      <p>
+        Cette fonction doit récupérer l'élément h1 via son id et en modifier la
+        liste de classes pour lui ajouter la classe primary
+      </p>
+      <p>Lier votre fonction à l'événement "click" de votre bouton</p>
+      <p>
+        Au click, votre titre doit changer de couleur de fond et de texte pour
+        correspondre au style de la classe primary
+      </p>
+      <button onclick="finish('exercise-3')">Terminer</button>
+    </section>
+    <section id="exercise-4">
+      <h1>4. Modification de texte</h1>
+      <p>Dans votre html, créez une div et un bouton</p>
+      <p>Créer un script ajoutant du texte dans votre div</p>
+      <button onclick="finish('exercise-4')">Terminer</button>
+    </section>
+    <section id="exercise-5">
+      <h1>5. Addition</h1>
+      <p>Dans votre html, créer deux input, une div "résultat" et un bouton</p>
+      <p>
+        Créer un script récupérant le contenu des deux inputs, l'additionnant et
+        l'injectant dans la div résultat
+      </p>
+      <p>
+        Essayer d'encoder deux chiffres dans les inputs et d'appuyer sur le
+        bouton. Quel est le résultat ?
+      </p>
+      <p>
+        Essayer d'encoder "hello" dans le premier input et "world" dans le
+        second. Appuyez sur le bouton. Quel est le résultat ?
+      </p>
+      <p>
+        Faites part de vos observations à votre professeur et/ou vos voisins de
+        table
+      </p>
+      <button onclick="finish('exercise-5')">Terminer</button>
+    </section>
+    <section id="exercise-6">
+      <h1>6. Modification de la dom</h1>
+      <p>Dans votre html, créez un bouton</p>
+      <p>
+        Créer un script ajoutant une div avec le texte 'hello world' se
+        déclenchant au click sur le bouton
+      </p>
+      <button onclick="finish('exercise-6')">Terminer</button>
+    </section>
+    <section id="exercise-7">
+      <h1>7. Modification de la dom : 2</h1>
+      <p>Créer un script ajoutant une div au click sur un bouton</p>
+      <p>
+        Cette div doit contenir un texte renseigné par l'utilisateur dans un
+        input
+      </p>
+      <button onclick="finish('exercise-7')">Terminer</button>
+    </section>
+    <section id="exercise-8">
+      <h1>7. Modification de la dom : 3</h1>
+      <p>
+        Créer un script ajoutant un nombre "n" de div au click sur un bouton
+      </p>
+      <p>Ce nombre doit être encodé par l'utilisateur dans un input</p>
+      <p>Gérer les cas suivants</p>
+      <ul>
+        <li>L'utilisateur encode un chiffre</li>
+        <li>L'utilisateur n'encode rien</li>
+        <li>L'utilisateur encode du texte</li>
+      </ul>
+      <button onclick="finish('exercise-8')">Terminer</button>
+    </section>
+  </body>
+</html>
+<style>
+  section {
+    width: 33%;
+    padding: 16px;
+    margin: 16px;
+  }
+  .finished {
+    background-color: #cffdbc;
+    color: #3cb043;
+  }
+</style>
+<script>
+  //   alert(`Besoin d'un indice? Ouvre ce fichier dans ton éditeur`);
+
+  function finish(idExercise) {
+    let section = document.getElementById(idExercise);
+    section.classList.add("finished");
+  }
+</script>
